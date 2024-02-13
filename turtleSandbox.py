@@ -2,43 +2,107 @@
 
 import turtle
 
+### Function library:
+
+# Function to set the color, speed & pensize of the next turtle as simple arguments:
+def turSet(color, speed, pensize):
+    turtle.color(color)
+    turtle.speed(speed)
+    turtle.pensize(pensize)
+
 # Set turtle preferences:
 turtle.shape("turtle")
-turtle.speed(7)
+# turtle.speed(7)
 # turtle.color("pink")
 # turtle.screensize(1.0, 1.0)
 
-# Function library:
-
-def turMove(length):          # Function to move without markings
+# Function to move without markings:
+def turMove(length):
     turtle.penup()
     turtle.forward(length)
     turtle.pendown()
 
-def turLn(length, penWid, color):        # Function to draw lines
-    turtle.color(color)
-    turtle.pensize(penWid)
+# Function to draw lines:
+def turLn(length):
+    # turtle.color(color)
+    # turtle.pensize(penWid)
     turtle.forward(length)
 
-# sqLen = 0
-def turSq(sideLen, penWid, color):       # Function to draw squares
-    turtle.color(color)
-    turtle.pensize(penWid)
+# Function to draw squares:
+def turSq(sideLen):
+    # turtle.color(color)
+    # turtle.pensize(penWid)
     for i in range(4):
         turtle.forward(sideLen)
         turtle.right(90)
     # sqLen = sideLen
 
-def turRec(sideLen, sideWid, penWid, color, speed):       # Function to draw rectangles
-    turtle.color(color)
-    turtle.speed(speed)
-    turtle.pensize(penWid)
+# Function to draw equilateral triangles of ^ (not V) shape:
+def turTri(sideLen):
+    for i in range(3):
+        turtle.forward(sideLen)
+        turtle.left(120)
+
+# Function to draw "houses":
+def turHouse(sideLen):
+    turTri(sideLen)
+    turSq(sideLen)
+
+# Generalized square function to draw rectangles:
+def turRec(sideLen, sideWid):
+    # turtle.color(color)
+    # turtle.speed(speed)
+    # turtle.pensize(penWid)
     for i in range(2):
         turtle.forward(sideLen)
         turtle.right(90)
         turtle.forward(sideWid)
         turtle.right(90)
 
+# Function to draw octagons:
+def turOct(sideLen):
+    for i in range(8):
+        turtle.forward(sideLen)
+        turtle.left(45)
+
+# Function to draw stop signs using octagons & rectangles:
+def turSign(sideLen):
+    postFwd = (2/5) * sideLen       # Adjusted from (3/8) for mathematical center
+    # print(postFwd)                # Used in testing
+    postWidth = (1/5) * sideLen
+    postHeight = 2 * sideLen
+    turOct(sideLen)                 # Draws the "STOP"
+    turtle.forward(postFwd)
+    turRec(postWidth, postHeight)   # Draws the signpost
+    turMove(sideLen*2)              # Moves turtle out of the way
+
+turSet("pink",9, 3)
+turSign(111)
+turSet("purple", 9, 2)
+turSign(77)
+
+# def turSign2(sideLen):
+#     postFwd = (3/8) * sideLen
+#     print(postFwd)
+#     postWidth = (1/5) * sideLen
+#     postHeight = 2 * sideLen
+#     turOct(sideLen)                 # Draws the "STOP"
+#     turtle.forward(postFwd)
+#     turRec(postWidth, postHeight)   # Draws the signpost
+#     # turMove(sideLen*2)              # Moves turtle out of the way
+#
+# varLen = 191
+#
+# turSet("pink",9, 3)
+# turSign(varLen)
+#
+# moveAmt = (varLen*2) + (2/5)*(varLen)
+# turMove(-moveAmt)
+#
+# turSet("blue", 9, 2)
+# turSign2(varLen)
+
+# Function to draw silly pictures using square & rectangle functions above:
 def turPic(len, wid, play):
     for i in range(play):
         turSq(len, 5, "pink")
@@ -58,7 +122,8 @@ END OF IMPORTS & FUNCTIONS
 '''
 
 '''
-STEPS 1-5
+STEPS 1-5:
+----------
 # Step 1: Drawing lines
 turLn(-222, 5, "purple")
 
@@ -69,20 +134,35 @@ turSq(111, 7, "green")
 
 # Step 5: Drawing rectangles
 turRec(55, 111, 3, "red", 5)
-'''
 
+STEP 6:
+-------
 # Step 6: Drawing pictures
 
-# turMove(-555)
-#
-# for px in "Hello world / This is me / Life should be / Fun for everyone":
-#     turRec(99, 77, 3, "black", 0)
-#     turMove(33)
-#     turSq(55, 5, "pink")
-
-# turtle.speed(1)
+turMove(-555)
+for px in "Hello world / This is me / Life should be / Fun for everyone":
+    turRec(99, 77, 3, "black", 0)
+    turMove(33)
+    turSq(55, 5, "pink")
+turtle.speed(1)
 
 turPic(111, 222, 33)
+
+STEP 7:
+-------
+# STEP 7: "house.py": Drawing a picture with functions
+
+turTri(555)
+turHouse(77)
+
+STEP 8:
+-------
+# STEP 8: "stop.py": Drawing stop signs with functions
+'''
+
+turSet("pink",3, 3)
+
+# turOct(55)
 
 turtle.Screen().exitonclick()
     # Must be at the END of the turtle code
