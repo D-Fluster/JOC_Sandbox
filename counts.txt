@@ -1,0 +1,4 @@
+File week3_text1.txt has 4 lines and 8 words 
+File week3_text2.txt has 3 lines and 6 words 
+File week3_text3.txt has 2 lines and 4 words 
+In total, all 3 files have 9 lines and 18 words
