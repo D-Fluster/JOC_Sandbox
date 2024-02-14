@@ -142,3 +142,84 @@ outputFile.write(f"File {countFiles[0]} has {countLines_results[0]} lines and {c
 
 
 
+title3 = "Sample Grades Data Project"
+print(title3)
+danimo.spacing2(0,".", len(title3)//2 + 1)
+
+
+# import pandas
+# sampleGrades = pandas.read_csv('week3_sample-grades.csv', index_col='Name')
+# # ERRORS
+
+import csv
+
+from statistics import stdev
+
+# sampleGrades = csv.reader("week3_sample-grades.csv")
+# print(sampleGrades)
+# # Just outputs: <_csv.reader object at 0x000001F0D92391E0>
+
+def meanList(list):
+    return round(sum(list) / len(list), 2)
+
+def medianList(list):
+    list.sort()
+    # print(list)           # Works throughout function properly
+    if len(list)%2 == 1:
+        med = ((len(list) + 1) // 2) - 1
+            # When a list has an odd number of entries, the median value is the middlemost --
+            # e.g., for a 5-entry list with index 1 to n, it's in position (5+1)/2
+        # print(med)           # Works as expected!
+        return list[med]
+    else:                       # i.e., if len(list)%2 == 0:
+        med = len(list) // 2
+        # med2 = med1 + 1
+            # For lists with an even number of entries, the median is the mean value of the
+            # two middlemost entries (i.e., the one at half of len(list) and the next one
+        # print([list[med - 1], list[med]])     # Works as expected!
+        return meanList([list[med - 1], list[med]])
+
+# print(medianList([1, 2, 3, 4, 5]))          # Odd len test case
+#                                             # Returns 3 as expected
+# print(medianList([1, 2, 3, 4, 5, 6]))       # Even len test case
+#                                             # Returns 3.5 as expected
+
+# Tab & shift-tab to indent & de-dent blocks!
+
+with open("week3_sample-grades.csv") as csvfile:
+    sampleGrades = csv.reader(csvfile)
+    fallGrades = []
+    springGrades = []
+    for row in sampleGrades:
+        if row[1] == "Fall 2016":
+            fallGrades.append(int(row[2]))
+        elif row[1] == "Spring 2016":               # Being explicit here in case other semesters are later compared (irl)
+            springGrades.append(int(row[2]))
+
+    fallGrades.sort()
+    springGrades.sort()
+
+    print(f"Fall grades sorted: {fallGrades}")
+    print(f"Spring grades sorted: {springGrades}")
+    danimo.spacing2(1, "*", 33)
+
+    print(f"Fall mean grade: {meanList(fallGrades)}")
+    print(f"Spring mean grade: {meanList(springGrades)}")
+    danimo.spacing2(1, "*", 33)
+
+    print(f"Fall median grade: {medianList(fallGrades)}")
+    print(f"Spring median grade: {medianList(springGrades)}")
+    danimo.spacing2(1, "*", 33)
+
+    print(f"Fall standard deviation: {round(stdev(fallGrades), 2)}")
+    print(f"Spring standard deviation: {round(stdev(springGrades), 2)}")
+        # Values differ slightly from expected output:
+        # Fall act 6.41 vs exp 6.29
+        # Spr act 10.41 vs exp 10.17
+        # Likely due to the preciseness of the imported function versus a created one
+        # Yes, verified using Excel =stdev(vals)!
+
+    # print(", ".join(col))           # Prints as comma-separated lines, rather than sets
+
+
+
