@@ -1,3 +1,9 @@
+import danimo
+# How to get this to work?
+
+spacing(2, 22)
+
+'''
 # Day 3
 # Using Lists & Strings
 
@@ -30,14 +36,14 @@ def mangle(string):
     # string = string1 + string2 + string3
     print(string1 + string2 + string3)
     # print("---")
-
+'''
 '''
 Good idea to initialize with an empty function or "STUB" such as:
 
 def mangle(str):
     return str
 '''
-
+'''
 def proTest():
     mangle("hellothere")
     mangle("42 degrees Celsius")
@@ -73,3 +79,98 @@ def count_vowels(list):
     return num_vowels
 
 print(count_vowels(["hi", "hello", "OOF!"]))    # 5
+
+spacing(2, 22)
+
+
+
+# Day 4
+# Reading "While"s
+
+# a - verified
+print("= = = = =")
+print("Basic While: #a")
+print("===")
+
+j = 4
+ans_while = []
+while j > -4:
+    print(j)
+    ans_while.append(j)
+    j -= 1
+print("---")
+
+ans_for = []
+for j in range(4, -4, -1):
+    print(j)
+    ans_for.append(j)
+print("---")
+
+print(f"For & While Loops Equivalent? {str(ans_while == ans_for).upper()}")
+# print(ans_while)
+# print(ans_for)
+print("= = = = =")
+
+
+
+# b -- verified
+print("= = = = =")
+print("Basic While: #b")
+print("===")
+
+# print(2, "str")           # Does print "2 str" (no quotes anywhere)
+
+# def while_b_given():
+
+string = "Hello"
+builder = ""
+i = 0
+while i < len(string):
+    builder += string[i].swapcase()
+    print(i, builder)
+    i += 1
+print(string, "->", builder)
+
+string = "Hello"
+builder = ""
+for i in range(len(string)):
+   builder += string[i].swapcase()
+   print(i, builder)
+print(f"{string} -> {builder}")
+
+
+
+# c
+x = 0
+i = 1
+while x < 20:
+    if x > 5:
+        x += 15
+    else:
+        x += 1
+    print(i, x)
+    i += 1
+print("---")
+
+# NOT EQUIVALENT!!!
+x = 0
+for i in range(1, 20):
+   if x > 5:
+      x += 15
+      # i += 14
+   else:
+      x += 1
+   print(i, x)
+
+print(x):
+hell{""}
+'''
+
+
+
+# string_list = ["hello", "how", "you"]
+# string_list.insert(2, "are")
+# print(string_list)      # ['hello', 'how', 'are', 'you']
+
+
+
