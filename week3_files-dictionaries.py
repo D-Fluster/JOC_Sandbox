@@ -1,5 +1,5 @@
 import danimo
-danimo.spacing2(1, "=", 22)
+danimo.spacing(1, "=", 22)
 
 
 
@@ -144,7 +144,7 @@ outputFile.write(f"File {countFiles[0]} has {countLines_results[0]} lines and {c
 
 title3 = "Sample Grades Data Project"
 print(title3)
-danimo.spacing2(0,".", len(title3)//2 + 1)
+danimo.spacing(0, ".", len(title3) // 2 + 1)
 
 
 # import pandas
@@ -201,15 +201,15 @@ with open("week3_sample-grades.csv") as csvfile:
 
     print(f"Fall grades sorted: {fallGrades}")
     print(f"Spring grades sorted: {springGrades}")
-    danimo.spacing2(1, "*", 33)
+    danimo.spacing(1, "*", 33)
 
     print(f"Fall mean grade: {meanList(fallGrades)}")
     print(f"Spring mean grade: {meanList(springGrades)}")
-    danimo.spacing2(1, "*", 33)
+    danimo.spacing(1, "*", 33)
 
     print(f"Fall median grade: {medianList(fallGrades)}")
     print(f"Spring median grade: {medianList(springGrades)}")
-    danimo.spacing2(1, "*", 33)
+    danimo.spacing(1, "*", 33)
 
     print(f"Fall standard deviation: {round(stdev(fallGrades), 2)}")
     print(f"Spring standard deviation: {round(stdev(springGrades), 2)}")

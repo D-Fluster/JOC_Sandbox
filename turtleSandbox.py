@@ -76,11 +76,6 @@ def turSign(sideLen):
     turRec(postWidth, postHeight)   # Draws the signpost
     turMove(sideLen*2)              # Moves turtle out of the way
 
-turSet("pink",9, 3)
-turSign(111)
-turSet("purple", 9, 2)
-turSign(77)
-
 # def turSign2(sideLen):
 #     postFwd = (3/8) * sideLen
 #     print(postFwd)
@@ -160,7 +155,18 @@ STEP 8:
 # STEP 8: "stop.py": Drawing stop signs with functions
 '''
 
-turSet("pink",3, 3)
+turSet("pink",9, 3)
+turSign(111)
+turSet("purple", 9, 2)
+turSign(77)
+
+# Chris Discord:
+# def spiral(len,angle):
+#     for i in range(len):            # Prints nothing with range(len, 10, 5)
+#         turtle.forward(len)
+#         turtle.right(angle)
+#
+# spiral(50,25)
 
 # turOct(55)
 

@@ -4,12 +4,12 @@ def lines(numBreaks):
     for i in range(numBreaks):
         print("")
 
-def spacing(lineBreaks, dashes):
+def spaces(lineBreaks, dashes):
     lines(lineBreaks)
     print("- " * dashes)
     lines(lineBreaks)
 
-def spacing2(lineBreaks, char, repetition):
+def spacing(lineBreaks, char, repetition):
     lines(lineBreaks)
     print(f"{char} " * repetition)
     lines(lineBreaks)

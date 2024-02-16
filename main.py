@@ -3,6 +3,13 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+import danimo
+
+danimo.spacing(1, "~ ", 22)
+print("Oops, you just ran 'main.py' but you didn't mean to, did ya? ;D")
+danimo.spacing(1, "~ ", 22)
+
+'''
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -28,7 +35,8 @@ lines(1)
 print("TITLE")
 lines(1)
 
-'''
+
+
 import turtle               # imports the turtle module for use in this program
 
 turtle.shape("turtle")      # changes the shape from a default arrow to a turtle
@@ -36,7 +44,7 @@ turtle.shape("turtle")      # changes the shape from a default arrow to a turtle
 turlte.speed("8")           # fast speed on scale from 1-9 (0 and >=10 are fastest)
 
 turtle.forward(50)
-'''
+
 
 
 lines(2)
@@ -1550,7 +1558,7 @@ def alert(string, level):
 # alert("Warning", 2)
 # alert("DANGER", 4)
 
-''' f"{name} went to {meal} with {friend}." '''
+# f"{name} went to {meal} with {friend}."
 
 string = 'Warning'
 level = 2
@@ -1813,3 +1821,4 @@ spacing(3,222)
 print("Tic Tac Toe!!!")
 
 
+'''

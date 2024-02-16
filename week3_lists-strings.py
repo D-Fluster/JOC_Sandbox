@@ -396,17 +396,17 @@ def count_letter_WHILE(list, string):
 def testing_whiles():
     countList = ["HELLO", "goodbye", "1234 Oooh!"]
     print(countList[0][0].upper() == "h".upper())   # True
-    danimo.spacing(0, 5)
+    danimo.spaces(0, 5)
     print(count_letter_FOR(countList, "o"))
-    danimo.spacing(0, 5)
+    danimo.spaces(0, 5)
     print(count_letter_WHILE(countList, "o"))
-    danimo.spacing(0, 5)
+    danimo.spaces(0, 5)
     print(countList[1][-1] == "E")
-    danimo.spacing(0, 5)
+    danimo.spaces(0, 5)
     print(len(countList[0]))
     print(len(countList[1]))
     print(len(countList[2]))
-    danimo.spacing(0, 5)
+    danimo.spaces(0, 5)
 
 # testing_whiles()
 
@@ -420,7 +420,7 @@ def main_whiles():
           f"Output using 'while' loop: {average_neg_evens_WHILE(average_neg_evens_list)} \n"
           f"Same? {average_neg_evens_FOR(average_neg_evens_list) == average_neg_evens_WHILE([0, 1, 2, -2, -3, -4, 3, 4]) == -3}")
 
-    danimo.spacing(1, 11)
+    danimo.spaces(1, 11)
 
     count_letter_list = ["HELLO", "goodbye", "1234 Oooh!"]
     counter_letter_string = "o"
