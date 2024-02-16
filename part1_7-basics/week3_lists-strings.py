@@ -2,7 +2,7 @@ import danimo
 # How to get this to work?
 
 # from danimo import spacing
-# danimo.spacing(2, 22)
+# danimo.spacing(2, "a", 22)
 # danimo.lines(5)
 
 '''

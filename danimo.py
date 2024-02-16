@@ -1,3 +1,8 @@
+# Can use:
+# from danimo import *
+# to use all functions without the preceding "danimo."!
+
+
 # Spacing Functions
 
 def lines(numBreaks):
