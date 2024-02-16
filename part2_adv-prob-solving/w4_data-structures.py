@@ -4,8 +4,6 @@ import danimo
 # Week 4 - Data Structures & Algorithms
 # Day 1 - What are Data Structures?
 
-project = "HackerRank"
-
 def print_project_header(project, project_number, project_title):
     to_print = (f"{project.upper()} #{project_number}: {project_title}")
     danimo.spacing(2, "=", len(to_print))
@@ -28,6 +26,7 @@ def print_project_header(project, project_number, project_title):
     # Success Rate: 93.25%
     # Accessing and using arrays.
 
+project = "HackerRank"
 project_number = 1
     # When set to "01", results in SyntaxError:
     # leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
@@ -45,8 +44,11 @@ def reverseArray(a):
         # a_reversed.append(a(i))
     return a_reversed
 
-a_test1 = [1, 2, 3]
-print(reverseArray(a_test1))
+def main1():
+    a_test1 = [1, 2, 3]
+    print(reverseArray(a_test1))
+
+main1()       # All pass
 
 
 
@@ -55,6 +57,7 @@ print(reverseArray(a_test1))
 # SUCCESS! @ 2024-02-15 ~8am
 # URL: https://www.hackerrank.com/challenges/2d-array/problem
 
+project = "HackerRank"
 project_number = 2
 project_title = "2D DS Arrays"
 
@@ -140,4 +143,18 @@ def main_2():
     print(arrayHourglasses(sampleArray2))
     print(arrayHourglasses(sampleArray3))
 
-main_2()
+main_2()        # All pass
+
+
+
+
+
+# JOC Project 02 Pseudocode
+# flip(stack)
+# I/P
+
+project = "JOC Academy"
+project_number = "2A"
+project_title = "flip(stack)"
+
+print_project_header(project, project_number, project_title)

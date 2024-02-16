@@ -11,6 +11,7 @@ def turSet(color, speed, pensize):
     turtle.pensize(pensize)
 
 # Set turtle preferences:
+
 turtle.shape("turtle")
 # turtle.speed(7)
 # turtle.color("pink")
@@ -153,12 +154,13 @@ turHouse(77)
 STEP 8:
 -------
 # STEP 8: "stop.py": Drawing stop signs with functions
-'''
 
 turSet("pink",9, 3)
 turSign(111)
 turSet("purple", 9, 2)
 turSign(77)
+
+
 
 # Chris Discord:
 # def spiral(len,angle):
@@ -170,7 +172,10 @@ turSign(77)
 
 # turOct(55)
 
+
+
 turtle.Screen().exitonclick()
     # Must be at the END of the turtle code
     # Keeps the turtle screen active until the user closes it
     # Rather than directly after everything is run
+'''
