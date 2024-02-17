@@ -432,6 +432,12 @@ def matcher(string):
         return True
     else:
         return False
+        
+    # braces_in_str = []
+    # for char in str:
+    #     if char in braces_all:
+    #         braces_in_str.append(char)
+    # print(braces_in_str)
 '''
 
 def main5():
