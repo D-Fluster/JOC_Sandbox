@@ -10,7 +10,6 @@ print("Oops, you just ran 'main.py' but you didn't mean to, did ya? ;D")
 danimo.spacing(1, "~ ", 22)
 
 '''
-
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
