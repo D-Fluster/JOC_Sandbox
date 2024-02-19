@@ -59,8 +59,8 @@ print(problem2)
 spacing(1, "=", -(-len(problem2)//2))
     # Can use ceil() for ceiling divison, or equivalently double negation of floor division
 
-# testList = ["A", 2, "C"]        # ["A", 2, "C", "A", 2, "C", "A", 2, "C"]
-# testList = [["A", 2, "C"]]      # [['A', 2, 'C'], ['A', 2, 'C'], ['A', 2, 'C']]
+# testList = ["A", 2, "C"]        # * 3 = ["A", 2, "C", "A", 2, "C", "A", 2, "C"]
+# testList = [["A", 2, "C"]]      # * 3 = [['A', 2, 'C'], ['A', 2, 'C'], ['A', 2, 'C']]
 # print(testList * 3)
 
 

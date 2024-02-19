@@ -9,6 +9,16 @@ danimo.spacing(1, "~ ", 22)
 print("Oops, you just ran 'main.py' but you didn't mean to, did ya? ;D")
 danimo.spacing(1, "~ ", 22)
 
+
+# punc = '! () – [] {} : ; \ , <> . / ? @ # $ % ^ & *_'
+# str_1 = "Hello!, he said, -- I have $45 & you?"
+# no_punc = ""
+# for char in str_1:
+#               if char not in punc:
+#                              no_punc = no_punc + clear
+# print (no_punc)
+# # NameError: name 'clear' is not defined.
+
 '''
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
