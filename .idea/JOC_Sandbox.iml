@@ -8,6 +8,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="problem-solving-with-loops-sequences-D-Fluster" />
     <orderEntry type="module" module-name="using-stacks-queues-D-Fluster" />
+    <orderEntry type="module" module-name="arrays-maps-D-Fluster" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />

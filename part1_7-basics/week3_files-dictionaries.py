@@ -223,3 +223,19 @@ with open("week3_sample-grades.csv") as csvfile:
 
 
 
+
+
+# Bill Discord
+
+# def are_we(num, saying):
+#         #new_saying=("Are we", saying, "yet?")
+#         print("Are we", saying, "yet?")
+#         print(("Are we", saying, "yet?") * num)
+#
+# are_we(2, "there")
+
+# def are_we(num, saying):
+#     # new_saying="Are we {} yet? ".format(saying)
+#     new_saying = f"Are we {saying} yet?"
+#     print(new_saying*num)
+# are_we(2, "there")
