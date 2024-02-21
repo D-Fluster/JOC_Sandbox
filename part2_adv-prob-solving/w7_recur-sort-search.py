@@ -33,7 +33,7 @@ def main1():
     aich(10)
 
 
-# main1()
+main1()
 
 
 def summer(n):
@@ -91,15 +91,42 @@ def main2():
     print(reverse("Happy Friday!"))
     print(reverse("Mississippi"))
     print(reverse("I"))
-    print(reverse(""))
+    print(reverse(" "))
 
 
-# main2()
+main2()
 
 
+
+spacing(3, "*", 33)
 # print(9//2)
 
 minT = 2
 maxT = 3
 midT = minT + (maxT - minT) // 2
 print(midT)
+
+spacing(1, "_", 33)
+
+
+
+names = ["Manjeet", "Nikhil", "Shambhavi", "Astha"]
+roll_no = [4, 1, 3, 2]
+
+# using zip() to map values
+# mapped = zip(names, roll_no)
+# print(mapped)               # <zip object at 0x000002827C72D8C0>
+
+
+
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c']
+list3 = ['x', 'y', 'z']
+zipped = zip(list1, list2, list3)
+# print(zipped)
+result = list(zipped)
+# print(result)
+stringy = "".join(result)
+    # TypeError: sequence item 0: expected str instance, tuple found
+stringy2 = "".join(zipped)
+print(stringy2)
