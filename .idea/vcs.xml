@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../4-sorting-searching-D-Fluster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../5-implementing-adts-D-Fluster" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../arrays-maps-D-Fluster" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../problem-solving-with-loops-sequences-D-Fluster" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../using-stacks-queues-D-Fluster" vcs="Git" />

@@ -10,6 +10,7 @@
     <orderEntry type="module" module-name="using-stacks-queues-D-Fluster" />
     <orderEntry type="module" module-name="arrays-maps-D-Fluster" />
     <orderEntry type="module" module-name="4-sorting-searching-D-Fluster" />
+    <orderEntry type="module" module-name="5-implementing-adts-D-Fluster" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />
