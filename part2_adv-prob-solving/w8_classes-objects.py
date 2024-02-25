@@ -146,3 +146,64 @@ main()
     # but the rest of it can hold multiple things
 
 '''
+
+
+# queries = ["abc", "ab", "bc"]
+# query_counts = [0 for i in range(len(queries))]
+# print(query_counts)
+
+
+# def arrayManipulation(n, queries):
+#     # Write your code here
+#
+#     array = [0 for i in range(n)]
+#
+#     for query in queries:
+#         a = query[0]
+#         b = query[1] + 1
+#         k = query[2]
+#         print(a, b, k)
+#         for i in range(1, n + 1):
+#             if i in range(a, b):
+#                 array[i - 1] += k
+#             print(array)
+#
+#     print(max(array))
+#
+# arrayManipulation(5, [[1, 2, 3]])
+
+
+
+grades = [73, 67, 38, 33]
+
+for grade in grades:
+    # print(grade)
+    # print(grade%5)
+    if grade in range(38, 101):
+        # print(grade)
+        if grade%5 >= 3:
+            # print(grade)
+            grade += grade%5 - 1
+            # print(grade) # 75, 40
+
+# print(grades)
+
+
+def gradingStudents(grades):
+    # Write your code here
+
+    # grades_final = grades.copy()
+
+    # for grade in grades:
+    #     if grade in range(38, 101):
+    #         if grade%5 >= 3:
+    #             grade += grade%5 - 1
+
+    for i in range(len(grades)):
+        if grades[i] in range(38, 101):
+            if grades[i]%5 != 0 and grades[i]%5 >= 3:
+                grades[i] += 5 - grades[i]%5
+
+    return grades
+
+print(gradingStudents([x for x in range(101)]))

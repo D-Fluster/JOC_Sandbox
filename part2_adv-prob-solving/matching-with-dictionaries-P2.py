@@ -43,10 +43,10 @@ def matcher(str):
 
     for char in str:
         if char in braces_dictionary.keys():      # char is looping over only the keys in the dictionary (i.e., open braces)
-            s.push(char)                        # Currently only works on empty set -- not pushing to stack as expected
-        elif char in braces_dictionary.values() and s.is_empty():                           # If a closed bracket is encountered when
+            s.push(char)
+        elif char in braces_dictionary.values() and s.is_empty():      # If a closed bracket is encountered when
             return False                                                        # the stack is empty, it's unmatched
-        elif char in braces_dictionary.values():        # Still need to check if they're matching here -- to peek
+        elif char in braces_dictionary.values():        # Still need to check (via peek) to see if they're matching here
             s.pop()
 
     if s.is_empty():                    # If the full loop runs and the empty stack is returned, all brackets matched
