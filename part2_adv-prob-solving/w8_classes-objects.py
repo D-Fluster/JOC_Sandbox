@@ -207,3 +207,14 @@ def gradingStudents(grades):
     return grades
 
 print(gradingStudents([x for x in range(101)]))
+
+
+
+spacing(3, "*", 33)
+
+
+
+list = [1, 2, 3]
+# list += 4         No error but does nothing
+list.append(4)    # [1, 2, 3, 4]
+print(list)
