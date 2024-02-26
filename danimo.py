@@ -38,3 +38,8 @@ def turMove(length):
     turtle.penup()
     turtle.forward(length)
     turtle.pendown()
+
+
+# # print(eval("hello"))
+# print(eval("5"))
+# print(int("5"))
