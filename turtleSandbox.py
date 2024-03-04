@@ -171,11 +171,23 @@ turSign(77)
 # spiral(50,25)
 
 # turOct(55)
+'''
 
+
+# Discord @aaldwell 3/2/24
+
+def spiral(len, angle, spiralness):
+  variable_len = len
+  while variable_len > 1:
+    for i in range(2):
+      turtle.forward(variable_len)
+      turtle.right(angle)
+    variable_len /= spiralness
+
+spiral(111, 22, 1.11)
 
 
 turtle.Screen().exitonclick()
     # Must be at the END of the turtle code
     # Keeps the turtle screen active until the user closes it
     # Rather than directly after everything is run
-'''

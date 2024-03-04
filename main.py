@@ -10,6 +10,13 @@ print("Oops, you just ran 'main.py' but you didn't mean to, did ya? ;D")
 danimo.spacing(1, "~ ", 22)
 
 
+anArray = [1, 3, 5]
+anotherArray = []
+for i in range(len(anArray), 0, -1):
+  anotherArray.append(i)
+
+print(f"This is just another array: {anotherArray}... or is it?!")
+
 # punc = '! () – [] {} : ; \ , <> . / ? @ # $ % ^ & *_'
 # str_1 = "Hello!, he said, -- I have $45 & you?"
 # no_punc = ""
