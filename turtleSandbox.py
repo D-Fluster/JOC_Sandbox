@@ -174,17 +174,72 @@ turSign(77)
 '''
 
 
-# Discord @aaldwell 3/2/24
+# # Discord @aaldwell 3/2/24
+#
+# def spiral(len, angle, spiralness):
+#   variable_len = len
+#   while variable_len > 1:
+#     for i in range(2):
+#       turtle.forward(variable_len)
+#       turtle.right(angle)
+#     variable_len /= spiralness
+#
+# spiral(111, 22, 1.11)
 
-def spiral(len, angle, spiralness):
-  variable_len = len
-  while variable_len > 1:
-    for i in range(2):
-      turtle.forward(variable_len)
-      turtle.right(angle)
-    variable_len /= spiralness
 
-spiral(111, 22, 1.11)
+
+# # Discord Adam Armstrong (@rhianu) 3/10/24
+# turtle.speed(0)
+# turtle.Screen().setup(width=650, height=500)
+# turtle.Screen().bgcolor("blue")
+# turtle.color("white")
+#
+# radius = 30
+#
+# # turtle.speed(1)
+# turtle.pensize(7)
+#
+# turtle.goto(205, 25)
+# turtle.circle(radius)
+#
+# turtle.goto(70, 70)
+# turtle.circle(radius)
+#
+# turtle.goto(250, -200)
+# turtle.circle(radius)
+#
+# turtle.goto(0, 0)
+# turtle.circle(radius)
+#
+# # Drawing circles using a loop:
+# for i in range(1, 11):
+#   turtle.circle(15 * i)
+#
+# # Modified version to move down first:
+# turtle.goto(0, -200)
+#
+# for i in range(1, 11):
+#   turtle.circle(15 * i)
+#
+# # Draw a solid triangle:
+# turtle.Screen().bgcolor("blue")
+# turtle.shape("turtle")
+# turtle.color("green")
+# # turtle.speed(0)
+#
+# size = 200
+# turtle.penup()
+# turtle.goto(-200, 200)
+# turtle.pendown()
+#
+# def triangle(size):
+#   for i in range(3):
+#     turtle.forward(size)
+#     turtle.right(120)
+#
+# for i in range(500):
+#   triangle(5 + i)
+
 
 
 turtle.Screen().exitonclick()

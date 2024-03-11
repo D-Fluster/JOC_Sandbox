@@ -9,13 +9,21 @@ danimo.spacing(1, "~ ", 22)
 print("Oops, you just ran 'main.py' but you didn't mean to, did ya? ;D")
 danimo.spacing(1, "~ ", 22)
 
+# # Tracey Discord
+# phrase= "find your YODA!1!1"
+# print(phrase.islower())
+# print(phrase.lower())
+# print(phrase.lower().islower())
+# print(phrase.isdecimal())
+# print("123".isdecimal())
 
-anArray = [1, 3, 5]
-anotherArray = []
-for i in range(len(anArray), 0, -1):
-  anotherArray.append(i)
+# anArray = [1, 3, 5]
+# anotherArray = []
+# for i in range(len(anArray), 0, -1):
+#   anotherArray.append(i)
+#
+# print(f"This is just another array: {anotherArray}... or is it?!")
 
-print(f"This is just another array: {anotherArray}... or is it?!")
 
 # punc = '! () – [] {} : ; \ , <> . / ? @ # $ % ^ & *_'
 # str_1 = "Hello!, he said, -- I have $45 & you?"
